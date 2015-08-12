@@ -1,0 +1,41 @@
+ul#child_page_tree,
+ul#child_page_tree ul {
+	list-style-type: none;
+}
+
+ul#child_page_tree ul.children {
+	margin-left: 0;
+}
+
+ul#child_page_tree li {
+	margin-left: 0;
+}
+
+ul#child_page_tree li:before,
+ul#child_page_tree ul li:before {
+	content: "\f123";
+	top: 2px;
+
+	position: relative;
+	float: left;
+	font: 400 20px/1 dashicons;
+	speak: none;
+	padding: 4px 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-image: none!important;
+	margin-right: 6px;
+}
+
+ul#child_page_tree a {
+	color: #2D7DD2;
+	border-bottom: 0;
+}
+
+ul#child_page_tree a:hover {
+	color: #97CC04;
+}
+
+ul#child_page_tree a:visited {
+	color: #F45D01
+}
