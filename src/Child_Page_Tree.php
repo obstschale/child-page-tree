@@ -159,7 +159,7 @@ class Child_Page_Tree {
 		 *
 		 * @since 1.0.0
 		 */
-		$list = apply_filters( 'child_page_tree_output', wp_list_pages( $args ), $post_id );
+		$list = apply_filters( 'child_page_tree_before_output', wp_list_pages( $args ), $post_id );
 
 		$class = $this->tree_location;
 		return "<ul id='child_page_tree' class='{$class}'>" . $list . "</ul>";
