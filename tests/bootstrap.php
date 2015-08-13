@@ -1,4 +1,4 @@
 <?php
 
-include_once dirname( __DIR__ ) . '/vendor/autoload.php';
-include_once dirname( __DIR__ ) . '/child-page-tree.php';
+require_once dirname( __DIR__ ) . '/vendor/autoload.php';
+require_once dirname( __DIR__ ) . '/src/Child_Page_Tree.php';
