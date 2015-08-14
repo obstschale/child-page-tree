@@ -56,17 +56,17 @@ class Child_Page_Tree {
 		if ( is_page() ) {
 			// Get page id and retrieve page meta value for page tree
 			$post_id = get_the_ID();
-			$this->tree_location = get_post_meta( $post_id, 'child_page_tree_action', true );
+			$this->set_tree_location( get_post_meta( $post_id, 'child_page_tree_action', true ) );
 
 			// exit if no page tree should be added
-			if ( $this->tree_location == '' || $this->tree_location == 'none' )
+			if ( $this->get_tree_location() == '' || $this->get_tree_location == 'none' )
 				return $content;
 
 			// Build Tree
 			$tree = $this->get_child_page_tree_template( $post_id );
 
 			// Decide where to add the tree
-			switch ( $this->tree_location ) {
+			switch ( $this->get_tree_location ) {
 				case 'prepend':
 					return $tree . $content;
 					break;
@@ -154,6 +154,7 @@ class Child_Page_Tree {
 			'child_of' => $post_id,
 			'title_li' => ''
 		];
+
 		/**
 		 * Filter to alter the child page tree list
 		 *
@@ -161,7 +162,7 @@ class Child_Page_Tree {
 		 */
 		$list = apply_filters( 'child_page_tree_before_output', wp_list_pages( $args ), $post_id );
 
-		$class = $this->tree_location;
+		$class = $this->get_tree_location();
 		return "<ul id='child_page_tree' class='{$class}'>" . $list . "</ul>";
 
 	}
@@ -180,5 +181,17 @@ class Child_Page_Tree {
 		wp_register_style( 'child_page_tree_style', $url );
 		wp_enqueue_style( 'child_page_tree_style' );
 
+		return 1;
+	}
+
+	public function set_tree_location( $loc ) {
+		$this->tree_location = $loc;
+	}
+
+	/**
+	 * @return string  location where page tree should be added
+	 */
+	public function get_tree_location() {
+		return isset( $this->tree_location ) ? $this->tree_location : '';
 	}
 }
