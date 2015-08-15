@@ -47,7 +47,7 @@ class Child_Page_Tree {
 	 * Load Plugin's Translations
 	 */
 	public function load_textdomain() {
-		
+
 		load_plugin_textdomain( 'child-page-tree', false, dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages' );
 	}
 
