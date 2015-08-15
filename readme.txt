@@ -4,7 +4,7 @@ Contributors: obstschale
 Donate link: [PayPal Donation](http://bit.ly/hhb-paypal)
 Tags: page, tree, child, children
 Requires at least: 4.0
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 Tested up to: 4.3
 
 Display a page tree of all child pages of the current site
@@ -18,6 +18,10 @@ The plugin adds a select box to the page edit site right above the publish butto
 The output is a unorderd list with nested lists to reflect the hierarchy of the children. However this list can be changed using the build-in filter `child_page_tree_before_output`. This filter is applied before the list is added to content.
 
 The plugin ships with basic stylesheet, which adds a icon to each link and does not show the hierarchy of the pages. The handler for this stylesheet ist `child_page_tree_style` and you can simple dequeue the script using `wp_dequeue_style()`. Another way to add your own custom style is to override the default style by using a custom CSS plugin. The page tree has an id (`ul#child_page_tree`) you can use and one class, either `.append` or `.prepend` depending its location.
+
+
+= Requirements =
+* min. PHP 5.4
 
 == Screenshots ==
 
@@ -45,6 +49,11 @@ No. Child Page Tree displays only the page tree of the current site.
 
 == Changelog ==
 
+= 1.0.1 =
+* [FIX] setter call which caused PHP errors
+* [FIX] load textdomain for translations
+* [ADD] Banner and Icon for WordPress.org Repo
+* [ADD] Check PHP version before instantiating object
 
 = 1.0.0 =
 * Initial release of the plugin
