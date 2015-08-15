@@ -39,6 +39,16 @@ class Child_Page_Tree {
 		// Action tor enqueue custom css
 		add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_style' ] );
 
+		$this->load_textdomain();
+
+	}
+
+	/**
+	 * Load Plugin's Translations
+	 */
+	public function load_textdomain() {
+		
+		load_plugin_textdomain( 'child-page-tree', false, dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages' );
 	}
 
 	/**
