@@ -5,15 +5,13 @@ Donate link: [PayPal Donation](http://bit.ly/hhb-paypal)
 Tags: page, tree, child, children
 Requires at least: 4.0
 Stable tag: 1.0.1
-Tested up to: 4.3
+Tested up to: 4.5
 
 Display a page tree of all child pages of the current site
 
 == Description ==
 
-_Child Page Tree_ is simple plugin which is born from a need. I needed a simple way to list all children pages of the current page. I use this plugin for [Dicentis Documentation](http://docs.dicentis.io) to list all documentation pages of a current site. In this scenario I use a hiearchy to reflect the categories a document belongs.
-
-The plugin adds a select box to the page edit site right above the publish button. Using this select box you can decide whether to add and where to add the page tree. You can either add the page tree at the very top of page (prepend) or add it to the end of a page (append).
+_Child Page Tree_ adds a select box to the page edit site right above the publish button. Using this select box you can decide whether to add and where to add the page tree. You can either add the page tree at the very top of page (prepend) or add it to the end of a page (append).
 
 The output is a unorderd list with nested lists to reflect the hierarchy of the children. However this list can be changed using the build-in filter `child_page_tree_before_output`. This filter is applied before the list is added to content.
 
