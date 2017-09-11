@@ -82,44 +82,44 @@ class Child_Page_Tree_Test extends \PHPUnit_Framework_TestCase
     }
 
 
-    public function test_append_page_tree()
-    {
-    }
-
-
-    public function test_prepend_page_tree()
-    {
-    }
-
-
-    public function test_dont_add_page_tree_if_none()
-    {
-    }
-
-
-    public function test_dont_add_page_tree_if_wrong_meta_value()
-    {
-    }
-
-
-    public function test_add_selectbox_only_on_page_edit()
-    {
-    }
-
-
-    public function test_if_post_meta_not_set_choose_default_value_none()
-    {
-    }
-
-
-    public function test_save_post_meta()
-    {
-    }
-
-
-    public function test_skip_saving_if_not_on_page_edit()
-    {
-    }
+    //public function test_append_page_tree()
+    //{
+    //}
+    //
+    //
+    //public function test_prepend_page_tree()
+    //{
+    //}
+    //
+    //
+    //public function test_dont_add_page_tree_if_none()
+    //{
+    //}
+    //
+    //
+    //public function test_dont_add_page_tree_if_wrong_meta_value()
+    //{
+    //}
+    //
+    //
+    //public function test_add_selectbox_only_on_page_edit()
+    //{
+    //}
+    //
+    //
+    //public function test_if_post_meta_not_set_choose_default_value_none()
+    //{
+    //}
+    //
+    //
+    //public function test_save_post_meta()
+    //{
+    //}
+    //
+    //
+    //public function test_skip_saving_if_not_on_page_edit()
+    //{
+    //}
 
 //	public function test_apply_filter_on_page_tree() {
 //
