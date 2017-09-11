@@ -2,12 +2,14 @@
 
 namespace Child_Page_Tree;
 
+use PHPUnit\Framework\TestCase;
+
 /**
  * Class Child_Page_Tree_Test
  *
  * @author Hans-Helge Buerger
  */
-class Child_Page_Tree_Test extends \PHPUnit_Framework_TestCase
+class Child_Page_Tree_Test extends TestCase
 {
 
     /**
@@ -78,7 +80,16 @@ class Child_Page_Tree_Test extends \PHPUnit_Framework_TestCase
 
         \WP_Mock::expectActionAdded( 'wp_enqueue_scripts', [ $this->cpt, 'enqueue_style' ] );
 
+        \WP_Mock::wpFunction( 'plugin_basename', [
+            'times' => 1
+        ] );
+
+        \WP_Mock::wpFunction( 'load_plugin_textdomain', [
+            'times' => 1
+        ] );
+
         $this->cpt->register_hooks();
+        $this->assertTrue( true );
     }
 
 
