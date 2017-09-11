@@ -4,7 +4,7 @@ ul#child_page_tree ul {
 }
 
 ul#child_page_tree ul.children {
-	margin-left: 0;
+	margin-left: 26px;
 }
 
 ul#child_page_tree li {
@@ -20,7 +20,6 @@ ul#child_page_tree ul li:before {
 	float: left;
 	font: 400 20px/1 dashicons;
 	speak: none;
-	padding: 4px 0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background-image: none!important;
