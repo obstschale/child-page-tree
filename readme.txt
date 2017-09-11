@@ -1,7 +1,6 @@
 === Child Page Tree ===
 
 Contributors: obstschale
-Donate link: [PayPal Donation](http://bit.ly/hhb-paypal)
 Tags: page, tree, child, children
 Requires at least: 4.0
 Stable tag: 1.0.1

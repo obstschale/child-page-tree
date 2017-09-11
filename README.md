@@ -5,10 +5,9 @@
 [![WordPress plugin](https://img.shields.io/wordpress/plugin/v/child-page-tree.svg?style=flat-square)](https://wordpress.org/plugins/child-page-tree/)
 [![WordPress](https://img.shields.io/wordpress/plugin/dt/child-page-tree.svg?style=flat-square)](https://wordpress.org/plugins/child-page-tree/)
 [![WordPress](https://img.shields.io/wordpress/v/child-page-tree.svg?style=flat-square)](https://wordpress.org/plugins/child-page-tree/)
-[![Paypal](https://img.shields.io/badge/PayPal-donate-blue.svg?style=flat-square)](http://bit.ly/hhb-paypal)
+[![Paypal](https://img.shields.io/badge/PayPal-donate-blue.svg?style=flat-square)](https://www.paypal.me/obstschale)
 
 **Contributors:** obstschale  
-**Donate link:** [PayPal Donation](http://bit.ly/hhb-paypal)  
 **Tags:** page, tree, child, children  
 **Requires at least:** 4.0  
 **Stable tag:** 1.0.1  
